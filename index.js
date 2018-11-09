@@ -4,7 +4,7 @@ let userInput;
 const numbers = [];
 let total = 0;
 
-while (userInput !== null && userInput !== 0) {
+do {
   userInput = +prompt("Введите число:");
 
   if (isNaN(userInput)) {
@@ -12,7 +12,7 @@ while (userInput !== null && userInput !== 0) {
   } else {
     numbers.push(userInput);
   }
-}
+} while (userInput !== null && userInput !== 0);
 
 for (let i = 0, max = numbers.length; i < max; i++) {
   total += numbers[i];
