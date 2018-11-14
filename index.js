@@ -27,14 +27,14 @@ do {
 
   if (userInput === null) {
     break;
-  } else if (!isNaN(+userInput)) {
+  } if (!Number.isNaN(+userInput)) {
     numbers.push(+userInput);
   } else {
     alert("Было введено не число,попробуйте еще раз.");
   }
 } while (userInput);
 
-if (numbers.length = 0) {
+if (numbers.length > 0 ) {
   for (let i of numbers) {
     total += i;
   }
